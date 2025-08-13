@@ -1,0 +1,330 @@
+.about {
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  min-height: auto;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-illustration {
+  position: relative;
+  width: 400px;
+  height: 500px;
+}
+
+.avatar-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.avatar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.avatar-face {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.avatar-eyes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.eye {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.avatar-smile {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 20px;
+  border: 3px solid white;
+  border-top: none;
+  border-radius: 0 0 40px 40px;
+}
+
+.solar-system-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.box-border {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f39c12, #e67e22);
+  border-radius: 20px;
+  position: relative;
+  transform: rotateX(15deg) rotateY(15deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.box-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #f39c12, #e67e22, #f39c12);
+  border-radius: 22px;
+  z-index: -1;
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+.sun {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: #f1c40f;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #f1c40f;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  animation: orbit 10s linear infinite;
+}
+
+.mercury {
+  width: 8px;
+  height: 8px;
+  background: #95a5a6;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 3s;
+}
+
+.venus {
+  width: 12px;
+  height: 12px;
+  background: #e67e22;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 4s;
+}
+
+.earth {
+  width: 14px;
+  height: 14px;
+  background: #3498db;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 5s;
+}
+
+.mars {
+  width: 10px;
+  height: 10px;
+  background: #e74c3c;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 6s;
+}
+
+.jupiter {
+  width: 20px;
+  height: 20px;
+  background: #f39c12;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 7s;
+}
+
+.saturn {
+  width: 18px;
+  height: 18px;
+  background: #f1c40f;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 8s;
+}
+
+.uranus {
+  width: 16px;
+  height: 16px;
+  background: #9b59b6;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 9s;
+}
+
+.neptune {
+  width: 16px;
+  height: 16px;
+  background: #3498db;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 10s;
+}
+
+.about-right {
+  z-index: 2;
+}
+
+.about-text {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.education-card,
+.skills-card {
+  background: rgba(44, 74, 107, 0.8);
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #e94560;
+}
+
+.card-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-content p {
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+}
+
+.degree,
+.university {
+  font-weight: 600;
+  color: white;
+}
+
+.gpa {
+  color: #e94560;
+  font-weight: 600;
+}
+
+.about-cta {
+  text-align: center;
+}
+
+@keyframes borderGlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes orbit {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1.5rem;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .about-illustration {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .avatar-face {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .solar-system-box {
+    width: 250px;
+    height: 150px;
+  }
+  
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}

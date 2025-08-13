@@ -1,0 +1,137 @@
+.work {
+  padding: 4rem 2rem;
+  min-height: auto;
+  background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+}
+
+.work-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.work-experience {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.work-card {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(44, 74, 107, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.company-logo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gmu-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gmu-circle {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #006633, #669900);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 15px rgba(0, 102, 51, 0.3);
+}
+
+.company-info {
+  flex: 1;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.role-dates {
+  color: #e94560;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements li {
+  color: #a8a8a8;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.achievements li::before {
+  content: "▸";
+  color: #e94560;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.achievements strong {
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .work-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .company-logo {
+    align-self: center;
+  }
+  
+  .achievements li {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .work {
+    padding: 2rem 1rem;
+  }
+  
+  .work-card {
+    padding: 1.5rem;
+  }
+  
+  .company-name {
+    font-size: 1.3rem;
+  }
+}
