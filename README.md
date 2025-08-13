@@ -1,8 +1,8 @@
-# Chris Browne - Software Engineer Portfolio
+# My Software Engineer Portfolio
 
 A modern, responsive portfolio website built with React and TypeScript, featuring a beautiful space theme and showcasing professional experience, skills, and projects.
 
-## 🚀 Features
+##  Features
 
 - **Space Theme Design**: Beautiful dark theme with animated stars and cosmic elements
 - **Responsive Layout**: Fully responsive design that works on all devices
@@ -10,7 +10,7 @@ A modern, responsive portfolio website built with React and TypeScript, featurin
 - **Multiple Sections**: Hero, About, Skills, Work Experience, Leadership, and Portfolio
 - **Modern Tech Stack**: Built with React 18, TypeScript, and modern CSS
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Frontend**: React 18 with TypeScript
 - **Styling**: CSS3 with custom animations and responsive design
@@ -18,7 +18,7 @@ A modern, responsive portfolio website built with React and TypeScript, featurin
 - **Routing**: React Router for seamless navigation
 - **Build Tool**: Create React App with TypeScript template
 
-## 📱 Sections
+##  Sections
 
 ### 1. Hero Section
 - Animated space background with twinkling stars
@@ -51,7 +51,7 @@ A modern, responsive portfolio website built with React and TypeScript, featurin
 - Project descriptions and links
 - GitHub and live demo buttons
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (version 14 or higher)
@@ -85,7 +85,7 @@ npm run build
 
 This creates a `build` folder with the production-ready files.
 
-## 🎨 Customization
+## Customization
 
 ### Colors
 The portfolio uses a custom color palette:
@@ -102,7 +102,7 @@ Update the following files to customize your portfolio:
 - `src/components/Leadership.tsx` - Leadership roles
 - `src/components/Portfolio.tsx` - Project information
 
-## 📱 Responsive Design
+## Responsive Design
 
 The portfolio is fully responsive and includes:
 - Mobile-first approach
@@ -110,7 +110,7 @@ The portfolio is fully responsive and includes:
 - Adaptive layouts for different screen sizes
 - Touch-friendly navigation
 
-## 🌟 Animations
+## Animations
 
 - Floating animations for planets and elements
 - Hover effects on cards and buttons
@@ -118,58 +118,13 @@ The portfolio is fully responsive and includes:
 - Twinkling star animations
 - Rotating planet rings
 
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   ├── Hero.tsx          # Hero section with space theme
-│   ├── About.tsx         # About me section
-│   ├── Skills.tsx        # Skills grid
-│   ├── Work.tsx          # Work experience
-│   ├── Leadership.tsx    # Leadership roles
-│   ├── Portfolio.tsx     # Project showcase
-│   ├── Navigation.tsx    # Bottom navigation
-│   └── *.css             # Component-specific styles
-├── App.tsx               # Main app component with routing
-├── App.css               # Global styles and utilities
-└── index.tsx             # App entry point
-```
-
-## 🚀 Deployment
-
-The portfolio can be deployed to various platforms:
-
-### Netlify
-1. Build the project: `npm run build`
-2. Drag the `build` folder to Netlify
-3. Configure custom domain if needed
-
-### Vercel
-1. Connect your GitHub repository
-2. Vercel will automatically build and deploy
-3. Configure environment variables if needed
-
-### GitHub Pages
-1. Install gh-pages: `npm install --save-dev gh-pages`
-2. Add deploy script to package.json
-3. Run: `npm run deploy`
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 📞 Contact
+## Contact
 
 - **Name**: Chris Browne
-- **Email**: chris@example.com
-- **LinkedIn**: [LinkedIn Profile]
-- **GitHub**: [GitHub Profile]
+- **Email**: cbrowne9472@gmail.com
 
 ---
-
-Built with ❤️ using React and modern web technologies
